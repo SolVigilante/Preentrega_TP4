@@ -1,3 +1,130 @@
 \section{Filtros}
 
+En esta parte del trabajo se analizó la respuesta del circuito RLC serie ante una señal triangular de entrada. Para ello, se mantuvo la amplitud de la fuente y se midió la tensión de salida sobre cada uno de los componentes del circuito: la resistencia, el capacitor y el inductor.
+
+Las mediciones se realizaron para dos frecuencias representativas: \(f_{-2}\), ubicada por debajo del intervalo principal de resonancia, y \(f_2\), ubicada por encima de dicho intervalo. En cada caso se comparó la forma de onda de salida con la señal triangular de entrada.
+
+\subsection{Respuesta para \texorpdfstring{$f_{-2}$}{f	extsubscript{-2}}}
+
+En primer lugar, se analizó la respuesta del circuito para la frecuencia \(f_{-2}\). Esta frecuencia se encuentra por debajo de la zona de resonancia, por lo que el comportamiento del circuito se encuentra más asociado a la respuesta capacitiva.
+
+\subsubsection{Resistencia}
+El gráfico realizado a partir de las mediciones del archivo CSV puede verse en la Figura~\ref{fig:resistencia_-f2_osc}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{resistencia_-f2_osc.png}
+\caption{Señal de tensión sobre la resistencia para \(f_{-2}\), obtenida del osciloscopio.}
+\label{fig:resistencia_-f2_osc}
+\end{figure}
+
+El gráfico simulado correspondiente puede verse en la Figura~\ref{fig:-f2_R_sim}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{-f2_R_sim.png}
+\caption{Señal de tensión sobre la resistencia para \(f_{-2}\), obtenida por simulación.}
+\label{fig:-f2_R_sim}
+\end{figure}
+
+\subsubsection{Capacitor}
+El gráfico realizado a partir de las mediciones del archivo CSV puede verse en la Figura~\ref{fig:capacitor_-f2_osc}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{capacitor_-f2_osc.png}
+\caption{Señal de tensión sobre el capacitor para \(f_{-2}\), obtenida del osciloscopio.}
+\label{fig:capacitor_-f2_osc}
+\end{figure}
+
+El gráfico simulado correspondiente puede verse en la Figura~\ref{fig:-f2_C_sim}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{-f2_C_sim.png}
+\caption{Señal de tensión sobre el capacitor para \(f_{-2}\), obtenida por simulación.}
+\label{fig:-f2_C_sim}
+\end{figure}
+
+\subsubsection{Inductor}
+El gráfico realizado a partir de las mediciones del archivo CSV puede verse en la Figura~\ref{fig:inductor_-f2_osc}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{inductor_-f2_osc.png}
+\caption{Señal de tensión sobre el inductor para \(f_{-2}\), obtenida del osciloscopio.}
+\label{fig:inductor_-f2_osc}
+\end{figure}
+
+El gráfico simulado correspondiente puede verse en la Figura~\ref{fig:-f2_L_sim}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{-f2_L_sim.png}
+\caption{Señal de tensión sobre el inductor para \(f_{-2}\), obtenida por simulación.}
+\label{fig:-f2_L_sim}
+\end{figure}
+
+
+\subsection{Respuesta para \texorpdfstring{$f_2$}{f2}}
+\begin{table}[H]
+\centering
+\caption{Valores obtenidos para $f_2$}
+\begin{tabular}{ccc}
+\hline
+Columna 1 & Columna 2 & Columna 3 \\
+\hline
+Dato 1 & Dato 2 & Dato 3 \\
+\hline
+\end{tabular}
+\label{tab:triangular_f2}
+\end{table}
+
+Luego se analizó la respuesta del circuito para la frecuencia \(f_2\), ubicada por encima de la zona de resonancia. En este caso, el comportamiento del circuito se encuentra más asociado a la respuesta inductiva. En el Cuadro~\ref{tab:triangular_f2} se muestran los valores obtenidos a partir de los archivos CSV correspondientes.
+
+\subsubsection{Resistencia}
+El gráfico realizado a partir de las mediciones del archivo CSV puede verse en la Figura~\ref{fig:resistencia_f2_osc}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{resistencia_f2_osc.png}
+\caption{Señal de tensión sobre la resistencia para \(f_2\), obtenida del osciloscopio.}
+\label{fig:resistencia_f2_osc}
+\end{figure}
+
+El gráfico simulado correspondiente puede verse en la Figura~\ref{fig:f2_R_sim}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{f2_R_sim.png}
+\caption{Señal de tensión sobre la resistencia para \(f_2\), obtenida por simulación.}
+\label{fig:f2_R_sim}
+\end{figure}
+
+\subsubsection{Capacitor}
+El gráfico realizado a partir de las mediciones del archivo CSV puede verse en la Figura~\ref{fig:capacitor_f2_osc}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{capacitor_f2_osc.png}
+\caption{Señal de tensión sobre el capacitor para \(f_2\), obtenida del osciloscopio.}
+\label{fig:capacitor_f2_osc}
+\end{figure}
+
+El gráfico simulado correspondiente puede verse en la Figura~\ref{fig:f2_C_sim}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{f2_C_sim.png}
+\caption{Señal de tensión sobre el capacitor para \(f_2\), obtenida por simulación.}
+\label{fig:f2_C_sim}
+\end{figure}
+
+\subsubsection{Inductor}
+El gráfico realizado a partir de las mediciones del archivo CSV puede verse en la Figura~\ref{fig:inductor_f2_osc}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{inductor_f2_osc.png}
+\caption{Señal de tensión sobre el inductor para \(f_2\), obtenida del osciloscopio.}
+\label{fig:inductor_f2_osc}
+\end{figure}
+
+El gráfico simulado correspondiente puede verse en la Figura~\ref{fig:f2_bobina_sim}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{f2_bobina_sim.png}
+\caption{Señal de tensión sobre el inductor para \(f_2\), obtenida por simulación.}
+\label{fig:f2_bobina_sim}
+\end{figure}
+
 \newpage
